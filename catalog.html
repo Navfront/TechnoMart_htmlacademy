@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: {{projectTitle}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="header__menu">
+        <div class="container header__wrapper">
+          <a class="logo" href="index.html"
+            ><img
+              class="image"
+              src="./img/logo-technomart.svg"
+              alt="Логотип Техномарт"
+              height="18"
+              width="108"
+          /></a>
+          <form
+            class="search-form"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+          >
+            <label class="search-label">
+              <input
+                aria-label="Поиск по сайту"
+                class="search-input"
+                name="search"
+                type="search"
+                placeholder="Поиск:"
+              />
+              <svg
+                role="img"
+                class="search-icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 18 18"
+                fill="#69717f"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                />
+              </svg>
+            </label>
+          </form>
+
+          <ul class="header__order-menu order-menu list-reset">
+            <li class="order-menu__item">
+              <a class="order-menu__link icon icon--bookmark" href="blank.html">
+                Закладки:
+                <span class="bookmark-numb">0</span></a
+              >
+            </li>
+            <li class="order-menu__item">
+              <a
+                class="order-menu__link order-menu__link--active icon icon--cart"
+                href="blank.html"
+              >
+                Корзина:
+                <span class="cart-numb"> 10</span></a
+              >
+            </li>
+            <li class="order-menu__item">
+              <a
+                class="order-menu__link order-menu__link--purchase"
+                href="blank.html"
+                >Оформить заказ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <section class="header__about">
+          <h1 class="visually-hidden">
+            Техномарт - интернет мазазин строительных материалов и инструментов
+            для ремонта
+          </h1>
+          <h2 class="header__title" aria-hidden="true">
+            Интернет-магазин<br />
+            строительных материалов <br />
+            и инструментов для ремонта
+          </h2>
+          <address class="header__address">
+            <a
+              class="phone-link icon icon--phone"
+              aria-label="позвонить по телефону в техномарт: +7 800 555 86 28 "
+              href="tel:+78005558628"
+              >+7 800 555-86-28</a
+            >
+            <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          </address>
+          <div class="header__login-out disabled">
+            <button class="btn-auth btn-auth--login" type="button">
+              <svg
+                role="img"
+                width="21"
+                height="17"
+                viewBox="0 0 21 17"
+                fill="#C5C5C5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" />
+                <path
+                  d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"
+                />
+              </svg>
+              Войти
+            </button>
+            <button class="btn-auth" type="button">Регистрация</button>
+          </div>
+          <div class="header__login-in login-in">
+            <p class="login-in__wrapper">
+              <a
+                class="btn-auth btn-auth--profile"
+                href="blank.html"
+                title="Перейти в профиль"
+                aria-label="Перейти в профиль"
+              >
+                <svg
+                  role="img"
+                  class="icon-ava"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="#C5C5C5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"
+                  />
+                </svg>
+                <span class="username">Равшан Джамшутович</span>
+              </a>
+              <a
+                class="btn-auth btn-auth--logout"
+                href="blank.html"
+                title="Деавторизироваться"
+              >
+                <svg
+                  role="img"
+                  aria-hidden="true"
+                  class="icon-logout"
+                  width="20"
+                  height="17"
+                  viewBox="0 0 20 17"
+                  fill="#C5C5C5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" />
+                  <path
+                    d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"
+                  />
+                </svg>
+              </a>
+            </p>
+            <ul class="login-in__list list-reset">
+              <li class="login-in__item">
+                <a class="login-in__link" href="blank.html">Мои заказы</a>
+              </li>
+              <li class="login-in__item">
+                <a class="login-in__link" href="blank.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <nav class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Компания</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Спецпредложения</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="catalog container">
+        <ul class="catalog__breadcrumbs breadcrumbs list-reset">
+          <li>
+            <a
+              class="breadcrumbs__items"
+              href="index.html"
+              aria-label="Вернуться на главную страницу"
+              ><svg
+                role="img"
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="#C1C6CE"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z"
+                />
+                <path
+                  d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a class="breadcrumbs__items" href="catalog.html">Каталог</a></li>
+          <li>
+            <a class="breadcrumbs__items" href="blank.html">Инструмент</a>
+          </li>
+          <li>
+            <a class="breadcrumbs__items" href="blank.html">Перфораторы</a>
+          </li>
+        </ul>
+        <h2 class="catalog__title">Перфораторы</h2>
+        <form
+          class="catalog__filter filter"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <p class="filter__title bg-style">Фильтр:</p>
+          <fieldset class="filter__price">
+            <legend class="filter__heading">Цена:</legend>
+            <div class="range bg-style">
+              <div class="range__scale">
+                <div
+                  class="range__bar"
+                  style="width: 78%; margin-left: 0%"
+                ></div>
+                <div
+                  role="button"
+                  class="range__toggle range__toggle-min"
+                  tabindex="0"
+                  style="left: -1%"
+                  aria-label="Ползунок минимальной цены"
+                ></div>
+                <div
+                  role="button"
+                  class="range__toggle range__toggle-max"
+                  tabindex="0"
+                  style="left: 78%"
+                  aria-label="Ползунок максимальной цены"
+                ></div>
+              </div>
+            </div>
+            <p class="filter__price-input">
+              <input
+                type="number"
+                name="price-min"
+                class="price-min bg-style"
+                value="0"
+                aria-label="Ввести минимальную цену"
+              />
+              <span class="filter__decor-line">—</span>
+              <input
+                type="number"
+                name="price-max"
+                class="price-max bg-style"
+                value="30000"
+                aria-label="Ввести максимальную цену"
+              />
+            </p>
+          </fieldset>
+          <fieldset class="filter__checkboxes">
+            <legend class="filter__heading">Производители:</legend>
+            <input
+              class="checkbox visually-hidden"
+              id="checkbox1"
+              type="checkbox"
+              name="brand[]"
+              value="bosch"
+              checked
+            /><label for="checkbox1">BOSCH</label>
+            <input
+              class="checkbox visually-hidden"
+              id="checkbox2"
+              type="checkbox"
+              name="brand[]"
+              value="interscol"
+            /><label for="checkbox2">ИНТЕРСКОЛ</label>
+            <input
+              class="checkbox visually-hidden"
+              id="checkbox3"
+              type="checkbox"
+              name="brand[]"
+              value="makita"
+              checked
+            /><label for="checkbox3">MAKITA</label>
+            <input
+              class="checkbox visually-hidden"
+              id="checkbox4"
+              type="checkbox"
+              name="brand[]"
+              value="dewalt"
+            /><label for="checkbox4">DEWALT</label>
+            <input
+              class="checkbox visually-hidden"
+              id="checkbox5"
+              type="checkbox"
+              name="brand[]"
+              value="hitachi"
+            /><label for="checkbox5">HITACHI</label>
+          </fieldset>
+          <fieldset class="filter__radio">
+            <legend class="filter__heading">Питание:</legend>
+            <input
+              class="radio visually-hidden"
+              id="radio__acum"
+              type="radio"
+              name="powersupply"
+              value="acum"
+              checked
+            /><label for="radio__acum">АККУМУЛЯТОРНЫЕ</label>
+            <input
+              class="radio visually-hidden"
+              id="radio__mains"
+              type="radio"
+              name="powersupply"
+              value="mains"
+            /><label for="radio__mains">СЕТЕВЫЕ</label>
+          </fieldset>
+          <button
+            class="filter__submit"
+            type="submit"
+            aria-label="отсортировать товары согласно фильтру"
+          >
+            ПОКАЗАТЬ
+          </button>
+        </form>
+        <div class="catalog__sort sort bg-style">
+          <p class="sort__title">Сортировка:</p>
+          <ul class="sort__list list-reset">
+            <li class="sort__item">
+              <a
+                href="blank.html"
+                class="sort__btn sort__btn--active"
+                aria-label="сортировка по цене"
+              >
+                По цене
+              </a>
+            </li>
+            <li class="sort__item">
+              <a
+                href="blank.html"
+                class="sort__btn"
+                aria-label="сортировка по типу"
+              >
+                По типу
+              </a>
+            </li>
+            <li class="sort__item">
+              <a
+                href="blank.html"
+                class="sort__btn"
+                aria-label="сортировка по функционалу"
+              >
+                По функционалу
+              </a>
+            </li>
+            <li class="sort__item sort__item--arrow">
+              <a
+                href="blank.html"
+                class="sort__btn-arrow"
+                aria-label="сортировка по возрастанию"
+              >
+                <svg
+                  role="img"
+                  width="12"
+                  height="10"
+                  viewBox="0 0 12 10"
+                  fill="#C5C5C5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" />
+                </svg>
+              </a>
+            </li>
+            <li class="sort__item sort__item--arrow">
+              <a
+                href="blank.html"
+                class="sort__btn-arrow sort__btn-arrow--down"
+                aria-label="сортировка по убыванию"
+              >
+                <svg
+                  role="img"
+                  width="12"
+                  height="10"
+                  viewBox="0 0 12 10"
+                  fill="#C5C5C5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <section class="catalog__goods">
+          <h2 class="visually-hidden">Каталог перфораторов</h2>
+          <ul class="catalog__list list-reset">
+            <li>
+              <article class="card" tabindex="0">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg6000.jpg"
+                      alt="Изображение перфоратора средней мощности со средним буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg6000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 6000</h3>
+                    <p class="card__old-price" aria-hidden="true">30500 Р.</p>
+                    <p class="card__new-price">25500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article class="card" tabindex="0">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg6000.jpg"
+                      alt="Изображение перфоратора средней мощности со средним буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg6000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 6000</h3>
+                    <p class="card__old-price" aria-hidden="true">30500 Р.</p>
+                    <p class="card__new-price">25500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article class="card new" tabindex="0">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg6000.jpg"
+                      alt="Изображение перфоратора средней мощности со средним буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg6000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 6000</h3>
+                    <p class="card__old-price" aria-hidden="true">30500 Р.</p>
+                    <p class="card__new-price">25500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article tabindex="0" class="card new">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg3000.jpg"
+                      alt="Изображение перфоратора средней мощности с маленьким буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить в корзину перфоратор bfg3000."
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          aria-label="Добавить в закладки перфоратор bfg3000."
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 3000</h3>
+                    <p class="card__old-price" aria-hidden="true">22500 Р.</p>
+                    <p class="card__new-price">15500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article class="card" tabindex="0">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg6000.jpg"
+                      alt="Изображение перфоратора средней мощности со средним буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg6000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 6000</h3>
+                    <p class="card__old-price" aria-hidden="true">30500 Р.</p>
+                    <p class="card__new-price">25500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article tabindex="0" class="card new">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg2000.jpg"
+                      alt="Изображение не дорогого перфоратора малой мощности с малым буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg2000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 2000</h3>
+                    <p class="card__old-price" aria-hidden="true"></p>
+                    <p class="card__new-price">12500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article tabindex="0" class="card new">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg3000.jpg"
+                      alt="Изображение перфоратора средней мощности с маленьким буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить в корзину перфоратор bfg3000."
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          aria-label="Добавить в закладки перфоратор bfg3000."
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 3000</h3>
+                    <p class="card__old-price" aria-hidden="true">22500 Р.</p>
+                    <p class="card__new-price">15500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article class="card" tabindex="0">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg6000.jpg"
+                      alt="Изображение перфоратора средней мощности со средним буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg6000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 6000</h3>
+                    <p class="card__old-price" aria-hidden="true">30500 Р.</p>
+                    <p class="card__new-price">25500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li>
+              <article tabindex="0" class="card new">
+                <figure class="card__wrapper">
+                  <div class="card__top">
+                    <img
+                      class="card__image"
+                      src="./img/catalog/bfg2000.jpg"
+                      alt="Изображение не дорогого перфоратора малой мощности с малым буром."
+                      width="220"
+                      height="159"
+                    />
+                    <ul class="card__menu list-reset">
+                      <li>
+                        <button
+                          class="card__btn card__btn--cart"
+                          type="button"
+                          aria-label="Добавить к корзину перфоратор bfg2000"
+                        >
+                          <svg
+                            role="img"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="white"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                            />
+                            <path
+                              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                            />
+                            <path
+                              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                            />
+                          </svg>
+                          <span class="card__btn-text" aria-hidden="true"
+                            >Купить</span
+                          >
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="card__btn card__btn--bookmark"
+                          type="button"
+                          aria-label="Добавить в закладки перфоратор bfg6000"
+                        >
+                          В закладки
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <figcaption class="card__description">
+                    <h3 class="card__header">Перфоратор BOSCH BFG 2000</h3>
+                    <p class="card__old-price" aria-hidden="true"></p>
+                    <p class="card__new-price">12500 Р.</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+          </ul>
+          <ul class="catalog__page-nav page-nav list-reset">
+            <li class="page-nav__item">
+              <a class="page-nav__link"
+                ><span class="visually-hidden">Страница с товарами:</span> 1</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="blank.html"
+                ><span class="visually-hidden">Страница с товарами:</span>2</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="blank.html"
+                ><span class="visually-hidden">Страница с товарами:</span>3</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="blank.html"
+                ><span class="visually-hidden">Страница с товарами:</span
+                >Следующая</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+      <article class="extra">
+        <div class="container">
+          <h2 class="extra__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+          <p class="extra__text">
+            Перфоратор — универсальный строительный инструмент. Предназначен для
+            сверления и долбления отверстий в кирпиче, бетоне и камне.<br />
+            Существуют электромеханические и пневматические перфораторы.
+            Современные модели могут выполнять функции дрели, шуруповерта и
+            отбойного молотка<br />
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном
+            устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__menu">
+        <div class="container">
+          <div class="footer__menu-wrap">
+            <div class="footer__info">
+              <a
+                class="logo"
+                href="index.html"
+                aria-label="Ссылка на главную страницу"
+                ><img
+                  class="image"
+                  src="./img/logo-technomart.svg"
+                  alt="Логотип Техномарт."
+                  height="23"
+                  width="138"
+              /></a>
+              <div class="footer__contacts">
+                <p class="footer__address">
+                  г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+                </p>
+                <a
+                  class="footer__phone"
+                  aria-label="позвонить по телефону в техномарт: +7 800 555 86 28 "
+                  href="tel:+78005558628"
+                  >+7 800 555-86-28</a
+                >
+              </div>
+            </div>
+            <div class="footer__navs">
+              <ul class="footer__site-nav list-reset">
+                <li><a class="footer__link" href="blank.html">Компания</a></li>
+                <li><a class="footer__link" href="blank.html">Новости</a></li>
+                <li><a class="footer__link" href="catalog.html">Каталог</a></li>
+                <li><a class="footer__link" href="blank.html">Доставка</a></li>
+                <li><a class="footer__link" href="blank.html">Контакты</a></li>
+              </ul>
+              <ul class="footer__catalog-nav list-reset">
+                <li><a class="footer__link" href="blank.html">Материалы</a></li>
+                <li><a class="footer__link" href="blank.html">Техника</a></li>
+                <li>
+                  <a class="footer__link" href="blank.html">Инструмент</a>
+                </li>
+                <li>
+                  <a class="footer__link" href="blank.html">Спецпредложения</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__callback">
+        <div class="container footer__callback-wrapper">
+          <p class="footer__copy">
+            © 2010–2021 Компания «Техномарт» <br />
+            Все права защищены
+          </p>
+
+          <ul class="footer__socials list-reset">
+            <li>
+              <a href="blank.html" aria-label="Вконтакте"
+                ><img
+                  src="./img/socials/vk.svg"
+                  width="26"
+                  height="15"
+                  alt="иконка вконтакте"
+              /></a>
+            </li>
+            <li>
+              <a href="blank.html" aria-label="Фейсбук"
+                ><img
+                  src="./img/socials/facebook.svg"
+                  width="12"
+                  height="22"
+                  alt="иконка фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href="blank.html" aria-label="Инстаграм"
+                ><img
+                  src="./img/socials/insta.svg"
+                  width="21"
+                  height="21"
+                  alt="иконка инстаграм"
+              /></a>
+            </li>
+          </ul>
+          <div class="footer__emails">
+            <p>
+              Обратная связь:<br /><a
+                href="mailto:mail@htmlacademy.ru"
+                aria-label="написать нам на почту"
+                >mail@htmlacademy.ru</a
+              >
+            </p>
+            <p>
+              Разработано —<br /><a
+                href="https://htmlacademy.ru/intensive/htmlcss"
+                aria-label="Курсы интенсив html academy"
+                >htmlacademy.ru</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="popup popup--alert">
+      <div class="popup__container">
+        <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="popup__grey-bg">
+        <div class="popup__buttons popup__container">
+          <a
+            id="alert-toCartBtn"
+            href="blank.html"
+            class="popup__btn popup__btn--warn"
+            aria-label="Оформить добавленные в корзину заказы"
+          >
+            ОФОРМИТЬ ЗАКАЗ
+          </a>
+          <button
+            type="button"
+            class="popup__btn popup__js-close"
+            aria-label="Закрыть модальное окно"
+          >
+            ПРОДОЛЖИТЬ ПОКУПКИ
+          </button>
+          <button
+            type="button"
+            class="popup__close-button popup__js-close"
+            aria-label="Закрыть модальное окно"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <script src="js/popups.js"></script>
+  </body>
+</html>

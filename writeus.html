@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: {{projectTitle}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="header__menu">
+        <div class="container header__wrapper">
+          <a class="logo" href="index.html"
+            ><img
+              class="image"
+              src="./img/logo-technomart.svg"
+              alt="Логотип Техномарт"
+              height="18"
+              width="108"
+          /></a>
+          <form
+            class="search-form"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+          >
+            <label class="search-label">
+              <input
+                aria-label="Поиск по сайту"
+                class="search-input"
+                name="search"
+                type="search"
+                placeholder="Поиск:"
+              />
+              <svg
+                role="img"
+                class="search-icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 18 18"
+                fill="#69717f"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                />
+              </svg>
+            </label>
+          </form>
+          <ul class="header__order-menu order-menu list-reset">
+            <li class="order-menu__item">
+              <a class="order-menu__link icon icon--bookmark" href="blank.html">
+                Закладки:
+                <span class="bookmark-numb">0</span></a
+              >
+            </li>
+            <li class="order-menu__item">
+              <a class="order-menu__link icon icon--cart" href="blank.html">
+                Корзина:
+                <span class="cart-numb">0</span></a
+              >
+            </li>
+            <li class="order-menu__item">
+              <a
+                class="order-menu__link order-menu__link--purchase"
+                href="blank.html"
+                >Оформить заказ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <section class="header__about">
+          <h1 class="visually-hidden">
+            Техномарт - интернет мазазин строительных материалов и инструментов
+            для ремонта
+          </h1>
+          <h2 class="header__title" aria-hidden="true">
+            Интернет-магазин<br />
+            строительных материалов <br />
+            и инструментов для ремонта
+          </h2>
+          <address class="header__address">
+            <a
+              class="phone-link icon icon--phone"
+              aria-label="позвонить по телефону в техномарт: +7 800 555 86 28 "
+              href="tel:+78005558628"
+              >+7 800 555-86-28</a
+            >
+            <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          </address>
+          <div class="header__login-out">
+            <button class="btn-auth btn-auth--login" type="button">
+              <svg
+                role="img"
+                aria-hidden="true"
+                width="21"
+                height="17"
+                viewBox="0 0 21 17"
+                fill="#C5C5C5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" />
+                <path
+                  d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"
+                />
+              </svg>
+              Войти
+            </button>
+            <button class="btn-auth" type="button">Регистрация</button>
+          </div>
+          <div class="header__login-in login-in disabled">
+            <p class="login-in__wrapper">
+              <a
+                class="btn-auth btn-auth--profile"
+                href="blank.html"
+                title="Перейти в профиль"
+                aria-label="Перейти в профиль"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon-ava"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="#C5C5C5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"
+                  />
+                </svg>
+                <span class="username">Равшан Джамшутович</span>
+              </a>
+              <a
+                class="btn-auth btn-auth--logout"
+                href="blank.html"
+                title="Деавторизироваться"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon-logout"
+                  width="20"
+                  height="17"
+                  viewBox="0 0 20 17"
+                  fill="#C5C5C5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" />
+                  <path
+                    d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"
+                  />
+                </svg>
+              </a>
+            </p>
+            <ul class="login-in__list list-reset">
+              <li class="login-in__item">
+                <a class="login-in__link" href="blank.html">Мои заказы</a>
+              </li>
+              <li class="login-in__item">
+                <a class="login-in__link" href="blank.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <nav class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Компания</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Спецпредложения</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main main">
+      <section>
+        <div class="container">
+          <h2>Напишите нам:</h2>
+        </div>
+        <form
+          class="write-us"
+          method="post"
+          action="https://echo.htmlacademy.ru"
+        >
+          <div class="write-us__wrapper popup__container">
+            <label class="write-us__label">
+              Ваше имя:
+              <input
+                aria-label="введите ваше имя и фамилию"
+                type="text"
+                name="login"
+                class="write-us__input"
+                id="write-us__login"
+                placeholder="Имя Фамилия"
+                required
+              />
+            </label>
+            <label class="write-us__label">
+              Ваш e-mail:
+              <input
+                aria-label="введите ваш email"
+                type="email"
+                name="email"
+                id="write-us__email"
+                class="write-us__input"
+                placeholder="email@example.com"
+                required
+              />
+            </label>
+            <label class="write-us__label write-us__label--fill">
+              Текст письма:
+              <textarea
+                aria-label="Напишите письмо в свободной форме"
+                name="message"
+                id="write-us__message"
+                class="write-us__input write-us__input--message"
+                placeholder="В свободной форме"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <div class="popup__grey-bg">
+            <div class="popup__buttons popup__container">
+              <button
+                id="writeUs-submit"
+                type="submit"
+                class="popup__btn popup__btn--warn"
+                aria-label="Отправить письмо"
+              >
+                Отправить
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__menu">
+        <div class="container">
+          <div class="footer__menu-wrap">
+            <div class="footer__info">
+              <a
+                class="logo"
+                href="index.html"
+                aria-label="Ссылка на главную страницу"
+                ><img
+                  class="image"
+                  src="./img/logo-technomart.svg"
+                  alt="Логотип Техномарт."
+                  height="23"
+                  width="138"
+              /></a>
+              <div class="footer__contacts">
+                <p class="footer__address">
+                  г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+                </p>
+                <a
+                  class="footer__phone"
+                  aria-label="позвонить по телефону в техномарт: +7 800 555 86 28 "
+                  href="tel:+78005558628"
+                  >+7 800 555-86-28</a
+                >
+              </div>
+            </div>
+            <div class="footer__navs">
+              <ul class="footer__site-nav list-reset">
+                <li><a class="footer__link" href="blank.html">Компания</a></li>
+                <li><a class="footer__link" href="blank.html">Новости</a></li>
+                <li><a class="footer__link" href="catalog.html">Каталог</a></li>
+                <li><a class="footer__link" href="blank.html">Доставка</a></li>
+                <li><a class="footer__link" href="blank.html">Контакты</a></li>
+              </ul>
+              <ul class="footer__catalog-nav list-reset">
+                <li><a class="footer__link" href="blank.html">Материалы</a></li>
+                <li><a class="footer__link" href="blank.html">Техника</a></li>
+                <li>
+                  <a class="footer__link" href="blank.html">Инструмент</a>
+                </li>
+                <li>
+                  <a class="footer__link" href="blank.html">Спецпредложения</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__callback">
+        <div class="container footer__callback-wrapper">
+          <p class="footer__copy">
+            © 2010–2021 Компания «Техномарт» <br />
+            Все права защищены
+          </p>
+
+          <ul class="footer__socials list-reset">
+            <li>
+              <a href="blank.html" aria-label="Вконтакте"
+                ><img
+                  src="./img/socials/vk.svg"
+                  width="26"
+                  height="15"
+                  alt="иконка вконтакте"
+              /></a>
+            </li>
+            <li>
+              <a href="blank.html" aria-label="Фейсбук"
+                ><img
+                  src="./img/socials/facebook.svg"
+                  width="12"
+                  height="22"
+                  alt="иконка фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href="blank.html" aria-label="Инстаграм"
+                ><img
+                  src="./img/socials/insta.svg"
+                  width="21"
+                  height="21"
+                  alt="иконка инстаграм"
+              /></a>
+            </li>
+          </ul>
+          <div class="footer__emails">
+            <p>
+              Обратная связь:<br /><a
+                href="mailto:mail@htmlacademy.ru"
+                aria-label="написать нам на почту"
+                >mail@htmlacademy.ru</a
+              >
+            </p>
+            <p>
+              Разработано —<br /><a
+                href="https://htmlacademy.ru/intensive/htmlcss"
+                aria-label="Курсы интенсив html academy"
+                >htmlacademy.ru</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
