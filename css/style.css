@@ -132,6 +132,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  background-color: var(--c-white);
 }
 
 /* container */
@@ -392,9 +393,6 @@ a {
   user-select: none;
 }
 
-.btn-auth:not(:first-child) {
-  margin-left: 9px;
-}
 .btn-auth.btn-auth--logout {
   margin-right: 0;
 }
@@ -1367,7 +1365,6 @@ a {
   height: 38px;
   text-align: center;
   font-size: inherit;
-  padding-left: 17px;
   padding-bottom: 2px;
 }
 .price-min {
@@ -1690,13 +1687,14 @@ a {
 /* price decor */
 .card__new-price::before {
   height: 100%;
+  width: 40px;
   content: "";
   position: absolute;
   top: 0;
-  right: -37.39px;
-  border: 19px solid transparent;
-  border-left: 19px solid var(--basic-red);
-  box-shadow: -5px 0 0 0 var(--basic-red);
+  right: -21px;
+  background-image: url("data:image/svg+xml, %3Csvg width='2' height='2' viewBox='0 0 2 2' fill='%23EE3643' xmlns='http://www.w3.org/2000/svg' %3E%3Cpolygon points='0,1 1,2 2,1 1,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card__menu {
