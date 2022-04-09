@@ -1629,6 +1629,7 @@ a {
 }
 .card__image {
   object-fit: contain;
+  align-self: flex-start;
 }
 .card__description {
   display: flex;
