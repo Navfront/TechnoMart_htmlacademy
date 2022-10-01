@@ -1614,7 +1614,6 @@ a {
 .card__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   height: 100%;
@@ -1625,27 +1624,30 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
 }
 .card__image {
   object-fit: contain;
   align-self: flex-start;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: normal;
 }
 .card__description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   max-width: 80%;
   text-transform: capitalize;
   padding-top: 15px;
+  flex-grow: 1;
 }
 .card__header {
   text-align: center;
   margin: 0;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 6px;
+  margin-top: auto;
+  padding-bottom: 6px;
 }
 .card__old-price {
   margin: 0;
